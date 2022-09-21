@@ -62,8 +62,7 @@ $breakpoints: (
   padding: 0;
 }
 
-html,
-body {
+html {
   height: 100%;
 }
 
@@ -75,6 +74,11 @@ body {
   // background-color: grey;
   background-image: url(./images/bg-pattern-top-mobile.svg);
   background-repeat: no-repeat;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // margin-top: 3em;
 }
 
 
@@ -95,9 +99,8 @@ h1 {
 .flex {
   &__top {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 2em;
-    
+
+    margin-bottom: 2em;  
     @include respond-to("medium"){
       flex-direction: row;
     }  

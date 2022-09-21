@@ -17,8 +17,7 @@
   padding: 0;
 }
 
-html,
-body {
+html {
   height: 100%;
 }
 
@@ -29,6 +28,10 @@ body {
   min-height: 100vh;
   background-image: url(./images/bg-pattern-top-mobile.svg);
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 p,
@@ -45,7 +48,6 @@ h1 {
 
 .flex__top {
   display: flex;
-  flex-direction: column;
   margin-bottom: 2em;
 }
 @media (min-width: 992px) {
